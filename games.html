@@ -4,26 +4,48 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Games - EduCode Pro</title>
-      <style> body { background-color: #333; color: #fff; font-family: Arial, sans-serif; } .container { width: 80%; margin: 40px auto; text-align: center; } .header { font-size: 36px; margin-bottom: 20px; } .login-form { background-color: #444; padding: 20px; border: 1px solid #555; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); } .login-form input { width: 100%; height: 40px; margin-bottom: 20px; padding: 10px; border: 1px solid #555; border-radius: 10px; } .login-form input[type="submit"] { background-color: #666; color: #fff; border: none; border-radius: 10px; cursor: pointer; } .login-form input[type="submit"]:hover { background-color: #777; } .categories { display: flex; flex-wrap: wrap; justify-content: center; } .category { background-color: #444; padding: 20px; border: 1px solid #555; border-radius: 10px; margin: 20px; width: 200px; } .category a { text-decoration: none; color: #fff; } </style>
+      <link rel="stylesheet" href="styles.css">
    </head>
    <body>
-      <div class="container">
-         <h1 class="header">Hey there!</h1>
-         <p>You are one of 2 things:</p>
-         <p>1:A student trying to access some games and stuff</p>
-         <p>2:A staff member is trying to get this website taken down and is looking for evidence</p>
-         <p>Sign in and let's find out :)</p>
-         <div class="login-form">
-            <form> <input type="email" placeholder="Email address" required> <input type="password" placeholder="Password" required> <input type="submit" value="Sign in"> </form>
-         </div>
-         <div class="categories" style="display: none;">
-            <div class="category"> <a href="#">Action Games</a> </div>
-            <div class="category"> <a href="#">Adventure Games</a> </div>
-            <div class="category"> <a href="#">Puzzle Games</a> </div>
-            <div class="category"> <a href="#">Strategy Games</a> </div>
-            <div class="category"> <a href="#">Sports Games</a> </div>
-         </div>
-      </div>
-      <script> const loginForm = document.querySelector('.login-form form'); loginForm.addEventListener('submit', (e) => { e.preventDefault(); const email = document.querySelector('.login-form input[type="email"]').value; const password = document.querySelector('.login-form input[type="password"]').value; if (email.endsWith('@sps.org') || email.endsWith('@_ps.org')) { // Login successful, show categories document.querySelector('.categories').style.display = 'flex'; } else { alert('Invalid email address'); } }); </script> 
+      <header>
+         <nav>
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About Us</a></li>
+               <li><a href="courses.html">Courses</a></li>
+               <li><a href="resources.html">Resources</a></li>
+               <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <section>
+            <h1>Games</h1>
+            <p>Play the best games online, including action games, puzzle games, and more!</p>
+         </section>
+         <section>
+            <h2>Popular Games</h2>
+            <ul>
+               <li><iframe src="https://apoderado.herokuapp.com/poki" frameborder="0" width="100%" height="500"></iframe></li>
+               <li><iframe src="https://apoderado.herokuapp.com/unblocked-games-77" frameborder="0" width="100%" height="500"></iframe></li>
+               <li><iframe src="https://apoderado.herokuapp.com/unblocked-games-66" frameborder="0" width="100%" height="500"></iframe></li>
+               <li><iframe src="https://apoderado.herokuapp.com/coolmath-games" frameborder="0" width="100%" height="500"></iframe></li>
+               <li><iframe src="https://apoderado.herokuapp.com/unblocked-games-24" frameborder="0" width="100%" height="500"></iframe></li>
+               <li><iframe src="https://apoderado.herokuapp.com/armor-games" frameborder="0" width="100%" height="500"></iframe></li>
+               <li><iframe src="https://apoderado.herokuapp.com/kongregate" frameborder="0" width="100%" height="500"></iframe></li>
+               <li><iframe src="https://apoderado.herokuapp.com/addictinggames" frameborder="0" width="100%" height="500"></iframe></li>
+               <li><iframe src="https://apoderado.herokuapp.com/unblocked-games-333" frameborder="0" width="100%" height="500"></iframe></li>
+               <li><iframe src="https://apoderado.herokuapp.com/y8" frameborder="0" width="100%" height="500"></iframe></li>
+               <li><iframe src="https://apoderado.herokuapp.com/agar-io" frameborder="0" width="100%" height="500"></iframe></li>
+               <li><iframe src="https://apoderado.herokuapp.com/slither-io" frameborder="0" width="100%" height="500"></iframe></li>
+               <li><iframe src="https://apoderado.herokuapp.com/diep-io" frameborder="0" width="100%" height="500"></iframe></li>
+               <li><iframe src="https://apoderado.herokuapp.com/krunker-io" frameborder="0" width="100%" height="500"></iframe></li>
+               <li><iframe src="https://apoderado.herokuapp.com/geoguessr" frameborder="0" width="100%" height="500"></iframe></li>
+            </ul>
+         </section>
+      </main>
+      <footer>
+         <p>&copy; 2023 EduCode Pro</p>
+      </footer>
    </body>
 </html>
